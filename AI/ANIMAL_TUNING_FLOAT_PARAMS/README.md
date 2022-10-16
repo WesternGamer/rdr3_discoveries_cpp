@@ -2,9 +2,9 @@
 
 ## Example
 
-```lua
-	Citizen.InvokeNative(0xCBDA22C87977244F, animal_ped_id, 74, 0.0) -- SET_ANIMAL_TUNING_FLOAT_PARAM  set ATF_ThreatResponseCombatProbability to 0.0. As result even bear will be harmless little pussycat.
-	Citizen.InvokeNative(0x4BC3ECFDA0297E27, animal_ped_id, 74) 	 -- GET_ANIMAL_TUNING_FLOAT_PARAM Check current float of ATF_ThreatResponseCombatProbability for animal.
+```cpp
+	SET_ANIMAL_TUNING_FLOAT_PARAM(animal_ped_id, 74, 0.0); //Sets ATF_ThreatResponseCombatProbability to 0.0. As result even bear will be harmless little pussycat.
+	GET_ANIMAL_TUNING_FLOAT_PARAM(animal_ped_id, 74); // Gets current float of ATF_ThreatResponseCombatProbability for animal.
 ```
 
 <h2>Some known Animal Tuning Float Params.</h2>
