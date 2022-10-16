@@ -2,9 +2,9 @@
 
 ## Example
 
-```lua
-	Citizen.InvokeNative(0x9FF1E042FA597187,animal_ped_id, 15, 1)  -- SET_ANIMAL_TUNING_BOOL_PARAM  ATB_CombatStandGround
-	Citizen.InvokeNative(0x1C1993824A396603,animal_ped_id, 15) -- GET_ANIMAL_TUNING_BOOL_PARAM ATB_CombatStandGround
+```cpp
+	SET_ANIMAL_TUNING_BOOL_PARAM(animal_ped_id, 15, true)  --  ATB_CombatStandGround
+	GET_ANIMAL_TUNING_BOOL_PARAM(animal_ped_id, 15) -- ATB_CombatStandGround
 ```
 
 <h2>Some known Animal Tuning Bool Params.</h2>
