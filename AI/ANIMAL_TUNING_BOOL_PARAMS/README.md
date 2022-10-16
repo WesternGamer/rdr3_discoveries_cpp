@@ -3,8 +3,8 @@
 ## Example
 
 ```cpp
-	SET_ANIMAL_TUNING_BOOL_PARAM(animalPedId, 15, true); //ATB_CombatStandGround
-	GET_ANIMAL_TUNING_BOOL_PARAM(animalPedId, 15); //ATB_CombatStandGround
+	FLOCK::SET_ANIMAL_TUNING_BOOL_PARAM(animalPedId, 15, true); //ATB_CombatStandGround
+	FLOCK::GET_ANIMAL_TUNING_BOOL_PARAM(animalPedId, 15); //ATB_CombatStandGround
 ```
 
 <h2>Some known Animal Tuning Bool Params.</h2>
