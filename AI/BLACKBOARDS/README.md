@@ -8,19 +8,19 @@ Visible changes can only be seen with few "script" blackboards. It seems Rocksta
 	//Visible changes only for "script" blackboards.
 	//To cancel blackboard float use value 0.0.
 	//Last parameter is duration (In frames, -1 = forever).
-	_SET_PED_BLACKBOARD_FLOAT(PLAYER::PLAYER_PED_ID(), "MetalDetectorDetectionValue", 1.0, -1); //The higher the value, the more metal detector vibrates.
+	PED::_SET_PED_BLACKBOARD_FLOAT(PLAYER::PLAYER_PED_ID(), "MetalDetectorDetectionValue", 1.0, -1); //The higher the value, the more metal detector vibrates.
 
 	//Visible changes only for "script" blackboards.
 	//Last parameter is duration (In frames, -1 = forever).
-	_SET_PED_BLACKBOARD_BOOL(PLAYER::PLAYER_PED_ID(), "NarrowLedge", true, 1000); //Applies "narrow" walkstyle for 1000 frames (~10 seconds)
+	PED::_SET_PED_BLACKBOARD_BOOL(PLAYER::PLAYER_PED_ID(), "NarrowLedge", true, 1000); //Applies "narrow" walkstyle for 1000 frames (~10 seconds)
 
 	//Visible changes only for "script" blackboards.
 	//Last parameter is duration (In frames, -1 = forever).
-	_SET_PED_BLACKBOARD_HASH(PLAYER::PLAYER_PED_ID(), "BodyPartChained", "Legs", 5000); //Applies "legschained" walkstyle for 5000 frames (~50 seconds)
+	PED::_SET_PED_BLACKBOARD_HASH(PLAYER::PLAYER_PED_ID(), "BodyPartChained", "Legs", 5000); //Applies "legschained" walkstyle for 5000 frames (~50 seconds)
 
 	//Last parameter is duration (In frames, -1 = forever).
 	//In this example, the native MISC::_GET_REAL_GAME_TIMER_IN_SECONDS() returns the amount of time elapsed since joining the game.
-	Citizen.InvokeNative(0x5F53010C4C3F6BAF, PLAYER::PLAYER_PED_ID(), "prsn_ilo_time", MISC::_GET_REAL_GAME_TIMER_IN_SECONDS(), -1)
+	PED::_SET_PED_BLACKBOARD_INT(PLAYER::PLAYER_PED_ID(), "prsn_ilo_time", MISC::_GET_REAL_GAME_TIMER_IN_SECONDS(), -1);
 
 ```
 
