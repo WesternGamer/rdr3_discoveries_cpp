@@ -2,8 +2,8 @@
 
 ## Example
 
-```lua
-	Citizen.InvokeNative(0x18FF3110CF47115D,horse_ped_id, 34, true)  -- as result horse dont have prompts to stow carriable entities
+```cpp
+	ENTITY::_SET_ENTITY_CARRYING_FLAG(horsePedId, 34, true); //As an result, the horse doesn't have prompts to stow carriable entities.
 ```
 
 <h2>Some known Carrying Flags.</h2>
