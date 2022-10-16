@@ -3,8 +3,8 @@
 ## Example
 
 ```cpp
-	SET_ANIMAL_TUNING_FLOAT_PARAM(animal_ped_id, 74, 0.0); //Sets ATF_ThreatResponseCombatProbability to 0.0. As result even bear will be harmless little pussycat.
-	GET_ANIMAL_TUNING_FLOAT_PARAM(animal_ped_id, 74); // Gets current float of ATF_ThreatResponseCombatProbability for animal.
+	FLOCK::SET_ANIMAL_TUNING_FLOAT_PARAM(animal_ped_id, 74, 0.0); //Sets ATF_ThreatResponseCombatProbability to 0.0. As result even bear will be harmless little pussycat.
+	FLOCK::GET_ANIMAL_TUNING_FLOAT_PARAM(animal_ped_id, 74); // Gets current float of ATF_ThreatResponseCombatProbability for animal.
 ```
 
 <h2>Some known Animal Tuning Float Params.</h2>
